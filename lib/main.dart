@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_interview_questions/pages/select_page.dart';
 
 import 'model/question_bank.dart';
+import 'widget/app_layout.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +26,7 @@ class _MyAppState extends State<MyApp> {
         colorSchemeSeed: Colors.blue,
         useMaterial3: true,
       ),
+      builder: (context, child) => AppLayout(body: child),
       home: FutureBuilder(
         future: fetcher,
         builder: (_, AsyncSnapshot<Bank> snapshot) {

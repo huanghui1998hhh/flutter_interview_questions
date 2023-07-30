@@ -6,7 +6,6 @@ import 'package:flutter_interview_questions/pages/quiz_page.dart';
 import 'package:flutter_interview_questions/style/color.dart';
 import 'package:flutter_interview_questions/style/size.dart';
 import 'package:flutter_interview_questions/style/text.dart';
-import 'package:flutter_interview_questions/widget/app_layout.dart';
 import 'package:flutter_interview_questions/widget/tapped.dart';
 
 class SelectPage extends StatefulWidget {
@@ -111,7 +110,7 @@ class _SelectPageState extends State<SelectPage> {
         children: cards,
       ),
     );
-    return AppLayout(
+    return Scaffold(
       body: Container(
         padding: EdgeInsets.symmetric(vertical: 12),
         child: Column(

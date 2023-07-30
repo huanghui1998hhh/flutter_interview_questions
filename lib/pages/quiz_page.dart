@@ -5,7 +5,6 @@ import 'package:flutter_interview_questions/model/quiz_model.dart';
 import 'package:flutter_interview_questions/style/color.dart';
 import 'package:flutter_interview_questions/style/size.dart';
 import 'package:flutter_interview_questions/style/text.dart';
-import 'package:flutter_interview_questions/widget/app_layout.dart';
 import 'package:flutter_interview_questions/widget/love_love_gesture.dart';
 import 'package:flutter_interview_questions/widget/markdown.dart';
 import 'package:flutter_interview_questions/widget/progress.dart';
@@ -116,7 +115,7 @@ class _QuizPageState extends State<QuizPage> {
       },
     );
 
-    return AppLayout(
+    return Scaffold(
       body: LoveLoveGesture(
         enable: _submitted,
         child: Container(

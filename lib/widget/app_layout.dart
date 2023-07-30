@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_interview_questions/style/color.dart';
 
 class AppLayout extends StatelessWidget {
-  final Widget body;
+  final Widget? body;
   const AppLayout({super.key, required this.body});
 
   @override
   Widget build(BuildContext context) {
     final isMobile = MediaQuery.of(context).size.width <= 500;
-    return Scaffold(
-      backgroundColor: ColorPlate.lightGray,
-      body: Center(
+    return Container(
+      color: ColorPlate.lightGray,
+      child: Center(
         child: Container(
           constraints: BoxConstraints(maxWidth: 800),
           width: double.infinity,
